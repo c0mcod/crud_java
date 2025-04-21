@@ -78,13 +78,13 @@ private static final String SENHA = "sua_senha";
 - altere o nome do BD na URL para o nome que você colocou quando criou o banco
 - Execute a classe Main.java.
 ## Funcionalidades
-- Inserir novo contato
+- Inserir novo produto
 
-- Listar todos os contatos
+- Listar todos os produtos
 
-- Atualizar um contato existente
+- Atualizar um produtos existente
 
-- Remover um contato
+- Remover um produto
 
 ## Contribuição
 Contribuições são bem-vindas. Sinta-se à vontade para abrir issues ou enviar pull requests com sugestões e melhorias.
