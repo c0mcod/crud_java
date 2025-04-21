@@ -71,10 +71,11 @@ git clone https://github.com/c0mcod/crud_java.git
 - Verifique e ajuste os dados de conexão na classe Conexao.java:
 
 ```java
-private static final String URL = "jdbc:mysql://localhost:3306/crud";
+private static final String URL = "jdbc:mysql://localhost:3306/cadastroprodutos";
 private static final String USUARIO = "seu_usuario";
 private static final String SENHA = "sua_senha";
 ```
+- altere o nome do BD na URL para o nome que você colocou quando criou o banco
 - Execute a classe Main.java.
 ## Funcionalidades
 - Inserir novo contato
