@@ -37,8 +37,8 @@ src/
 O banco utilizado é o MySQL. Abaixo está o script SQL para criação da tabela `contatos`:
 
 ```sql
-CREATE DATABASE crud;
-USE crud;
+CREATE DATABASE cadastroprodutos;
+USE cadastroprodutos;
 
 CREATE TABLE contatos (
   id INT AUTO_INCREMENT PRIMARY KEY,
