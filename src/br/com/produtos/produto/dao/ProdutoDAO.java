@@ -14,7 +14,7 @@ public class ProdutoDAO {
 
 	// criação do metodo de cadastro de produtos no banco de dados(CREATE)
 	public void cadastrarProduto(Produto produto) {
-		String sql = "INSERT INTO produtos VALUES (?, ?, ?)";
+		String sql = "INSERT INTO produtos(nome, preco, quantidade) VALUES (?, ?, ?)";
 
 		// estabelecer uma conexão com o banco de dados
 		Connection conn = null;
@@ -54,7 +54,7 @@ public class ProdutoDAO {
 
 	// criação do metodo de exibir os produtos cadastrados no banco de dados(READ)
 	public List<Produto> getProdutos() {
-		String sql = "SELECT * FROM produtos";
+		String sql = "SELECT * FROM cadastroprodutos.produtos;";
 		// criando um array de lista para armazenar as informações de produtos
 		List<Produto> produtos = new ArrayList<Produto>();
 		Connection conn = null;
@@ -101,7 +101,7 @@ public class ProdutoDAO {
 	}
 
 	public void updateProdutos(Produto produto) {
-		String sql = "UPDATE produtos SET nome = ?; preco = ?, quantidade = ? " + "WHERE id = ?";
+		String sql = "UPDATE produtos SET nome = ?, preco = ?, quantidade = ? " + "WHERE id = ?";
 
 		Connection conn = null;
 		PreparedStatement pstm = null;
